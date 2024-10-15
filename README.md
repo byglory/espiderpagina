@@ -1,2 +1,2 @@
 # espiderpagina
-# fet per Hugo Murillo i Itzan Jimenez
+# Fet per Hugo Murillo i Itzan Jimenez
