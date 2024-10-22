@@ -1,31 +1,56 @@
+body{
+  background-color: #b81414;
+}
+.nav {
+list-style-type: none; /*Quitar puntitos*/
+margin: 0;
+margin-top: -13px;
+margin-left: -10px;
+margin-right: -8px;
+padding: 0;
+overflow: hidden; /*Rellenar*/
+background-color: #333;
+position: sticky; /*Bajar con el mouse*/
+}
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: sticky;
-  
-    top: 0;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li :hover {
-    background-color: #111;
-  }
-  
-  .activo {
-    background-color: #4CAF50;
-  }
+.pasar {
+float: right; /*Alineacion de la barra de navegación*/
+}
+
+li a{
+display: block; /*Divide por filas*/
+color: white;
+text-align: center;
+margin: 21px;
+text-decoration: none; /*Quita el formato*/
+}
+
+.nav :hover{
+background-color: #111;
+}
+
+#activo {
+background-color: red;
+}
+#activo :hover {
+background-color: red;
+}
+#no {
+background-color: #444;
+}
+.logo {
+margin-top: -150px;
+width: 95%;
+display: block; /*Divide por filas*/
+margin-left: auto;  
+margin-right: auto;  
+}
+.logoCab {
+width: 7%; 
+display: block; /*Divide por filas*/
+margin-right: auto;  
+margin-left: 10px;
+}
+#no :hover:not(.activo) {
+background-color: #444;
+}
