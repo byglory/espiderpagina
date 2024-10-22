@@ -2,15 +2,49 @@
 <html lang="ca">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
     <title>EspiderPàgina</title>
+    <style>
+        ul {
+    list-style-type: none; /*Quitar puntitos*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /*Rellenar*/
+    background-color: #333;
+    position: sticky; /*Bajar con el mouse*/
+  
+    top: 0;
+  }
+  
+  .pasar {
+    float: right; /*Alineacion de la barra de navegación*/
+  }
+  
+  li a{
+    display: block; /*Divide por bloques*/
+    color: white;
+    text-align: center;
+    margin: 10px;
+    text-decoration: none; /*Quita el formato*/
+  }
+  
+  .pasar :hover {
+    background-color: #111;
+  }
+  
+  #activo {
+    background-color: red;
+  }
+    </style>
 </head>
 <body>
      <ul class="nav">
-        <li class="activo">Home</li>
-        <li class="inactivo">Pel·lícules</li>
-        <li class="inactivo">Personatges</li>
-        <li class="inactivo">Spidervers</li>
-        <li class="inactivo">Nosaltres</li>
+        <li class="pasar"> <a>Nosaltres</li>
+        <li class="pasar"> <a>Notícies</li>
+        <li class="pasar"> <a>Spidervers</li>
+        <li class="pasar"> <a>Pel·lícules</li>
+        <li class="pasar"> <a>Personatges</li>
+        <li class="pasar" id="activo"> <a>Home</li>
      </ul>
 </body>
 </html>

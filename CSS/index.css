@@ -14,7 +14,7 @@ ul {
     float: left;
   }
   
-  li a {
+  li a{
     display: block;
     color: white;
     text-align: center;
@@ -26,6 +26,6 @@ ul {
     background-color: #111;
   }
   
-  .active {
+  .activo {
     background-color: #4CAF50;
   }
