@@ -5,9 +5,15 @@
     <link rel="stylesheet" href="index.css">
     <title>EspiderPàgina</title>
     <style>
-        ul {
+    body{
+      background-color: lightcoral;
+    }
+    .nav {
     list-style-type: none; /*Quitar puntitos*/
     margin: 0;
+    margin-top: -15px;
+    margin-left: -10px;
+    margin-right: -8px;
     padding: 0;
     overflow: hidden; /*Rellenar*/
     background-color: #333;
@@ -21,31 +27,55 @@
   }
   
   li a{
-    display: block; /*Divide por bloques*/
+    display: block; /*Divide por filas*/
     color: white;
     text-align: center;
-    margin: 10px;
+    margin: 21px;
     text-decoration: none; /*Quita el formato*/
   }
   
-  .pasar :hover {
+  .nav :hover{
     background-color: #111;
   }
   
   #activo {
     background-color: red;
   }
+  #activo :hover {
+    background-color: red;
+  }
+  #no {
+    background-color: #444;
+  }
+  .logo {
+    margin-top: -150px;
+    width: 95%;
+    display: block; /*Divide por filas*/
+    margin-left: auto;  
+    margin-right: auto;  
+  }
+  .logoCab {
+  width: 7%; 
+  display: block; /*Divide por filas*/
+  margin-right: auto;  
+  margin-left: 10px;
+  }
+  #no :hover:not(.activo) {
+    background-color: #444;
+  }
     </style>
 </head>
 <body>
      <ul class="nav">
         <li class="pasar"> <a>Nosaltres</li>
-        <li class="pasar"> <a>Notícies</li>
+        <li class="pasar"> <a>Review</li>
+        <li class="pasar"> <a>Millors Moments</li>
         <li class="pasar"> <a>Spidervers</li>
         <li class="pasar"> <a>Pel·lícules</li>
         <li class="pasar"> <a>Personatges</li>
         <li class="pasar" id="activo"> <a>Home</li>
+        <li id="no"><img class="logoCab" src="IMG/logo.png"></li>
      </ul>
-     <img logo.png>
+     <img class="logo" src="IMG/logo.png">
 </body>
 </html>
