@@ -54,3 +54,10 @@ margin-left: 10px;
 #no :hover:not(.activo) {
 background-color: #444;
 }
+.TablaPelis, .TrPelis{
+border-collapse: collapse;
+border-color: 1px solid white;
+}
+.TrPelis{
+  border-color: white;
+}
