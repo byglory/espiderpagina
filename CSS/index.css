@@ -1,10 +1,11 @@
 body{
   background-color: #b81414;
+  font-family: sans-serif;
 }
 .nav {
 list-style-type: none; /*Quitar puntitos*/
 margin: 0;
-margin-top: -13px;
+margin-top: -8px;
 margin-left: -10px;
 margin-right: -8px;
 padding: 0;
@@ -54,10 +55,29 @@ margin-left: 10px;
 #no :hover:not(.activo) {
 background-color: #444;
 }
-.TablaPelis, .TrPelis{
-border-collapse: collapse;
-border-color: 1px solid white;
+.TablaPelis, .TdPelis{
+border: 1px solid white ;
+border-collapse:collapse;
+color: white;
+height: 35px;
 }
-.TrPelis{
-  border-color: white;
+.TdPelisPrime {
+  color: white;
+  border: 1px solid white;
+  height: 50px;
+}
+.TablaPelis{
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.TdPelis, .TdPelisPrime{
+  padding-left: 10px;
+}
+.TitTablaPelis{
+  text-align: left;
+}
+.SepPelis{
+  margin-top: 50px;
 }
