@@ -22,7 +22,7 @@ li a{
 display: block; /*Divide por filas*/
 color: white;
 text-align: center;
-margin: 21px;
+margin: 21.9px;
 text-decoration: none; /*Quita el formato*/
 }
 
@@ -40,7 +40,7 @@ background-color: red;
 
 #no {
 background-color: #444;
-padding-bottom: 1px;
+padding-bottom: 1.5px;
 }
 
   /*Dropdown*/
@@ -123,12 +123,50 @@ height: 35px;
   margin-top: 50px;
 }
 
+/*Galeria de fotos*/
 .millorsmoments{
   color: white;
+  padding-left: 60px;
+  padding-top: 20px;
 }
 
-.millorsmomentsSec1{
-  width: 1500px;
+.millorsmomentsSec1, .millorsmomentsSec2, .millorsmomentsSec3{
+  width: 1400px;
   height: 500px;
-  border: 2px solid aqua;
+  margin: auto;
+}
+
+.millorsmomentsSec2{
+  width: 1400px;
+  height: 375px;
+  margin: auto;
+}
+
+.millorsmomentsSec3{
+  width: 1400px;
+  height: 309px;
+  margin: auto;
+}
+
+.gf1{
+  width: 43%;
+}
+
+.gf3{
+  width: 54.9%;
+  padding-left: 24.9px;
+}
+
+.gf2{
+  margin-top: -50px;
+  width: 1400px;
+  height: 400px;
+}
+
+.gf8{
+  width: 44%;
+}
+.gf7{
+  padding-left: 9.56px;
+  width: 55%;
 }
