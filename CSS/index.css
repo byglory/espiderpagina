@@ -2,6 +2,7 @@ body{
   background-color: #b81414;
   font-family: sans-serif;
 }
+
 .nav {
 list-style-type: none; /*Quitar puntitos*/
 margin: 0;
@@ -10,7 +11,6 @@ margin-left: -10px;
 margin-right: -8px;
 padding: 0;
 overflow: hidden; /*Rellenar*/
-background-color: #333;
 position: sticky; /*Bajar con el mouse*/
 }
 
@@ -33,17 +33,41 @@ background-color: #111;
 #activo {
 background-color: red;
 }
+
 #activo :hover {
 background-color: red;
 }
+
 #no {
 background-color: #444;
+padding-bottom: 1px;
 }
 
-.dropdown{
-  
+  /*Dropdown*/
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
 
+.dropdown {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content a{
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
 
 .logo {
 margin-top: -150px;
@@ -69,11 +93,13 @@ border-collapse:collapse;
 color: black;
 height: 35px;
 }
+
 .TdPelisPrime {
   color: black;
   height: 50px;
   border: 2px solid #b81414 ;
 }
+
 .TablaPelis{
   width: 1400px;
   margin-left: auto;
@@ -83,13 +109,26 @@ height: 35px;
   border-radius: 10px; /* Agregar bordes redondeados a la tabla */
   overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente */
 }
+
 .TdPelis, .TdPelisPrime{
   padding-left: 10px;
 }
+
 .TitTablaPelis{
   text-align: left;
   color: white;
 }
+
 .SepPelis{
   margin-top: 50px;
+}
+
+.millorsmoments{
+  color: white;
+}
+
+.millorsmomentsSec1{
+  width: 1500px;
+  height: 500px;
+  border: 2px solid aqua;
 }
