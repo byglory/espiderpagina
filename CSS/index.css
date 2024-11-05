@@ -1,21 +1,22 @@
 body{
   background-color: #b81414;
   font-family: sans-serif;
+  margin-top: 70px;
 }
 
 .nav {
 list-style-type: none; /*Quitar puntitos*/
 margin: 0;
-margin-top: -8px;
 margin-left: -10px;
 margin-right: -8px;
 padding: 0;
-overflow: hidden; /*Rellenar*/
-position: sticky; /*Bajar con el mouse*/
+position:fixed; /*Bajar con el mouse*/
+top: 0; /*Pegarla al tope de la pagina*/
 }
 
 .pasar {
 float: right; /*Alineacion de la barra de navegación*/
+position: sticky;
 }
 
 li a{
@@ -24,6 +25,7 @@ color: white;
 text-align: center;
 margin: 21.9px;
 text-decoration: none; /*Quita el formato*/
+position: sticky;
 }
 
 .nav :hover{
@@ -32,6 +34,7 @@ background-color: #111;
 
 #activo {
 background-color: red;
+position: sticky;
 }
 
 #activo :hover {
@@ -43,7 +46,10 @@ background-color: #444;
 padding-bottom: 1.5px;
 }
 
+/*****************************************************************/
+
   /*Dropdown*/
+
 .dropdown {
   float: left;
   overflow: hidden;
@@ -81,12 +87,16 @@ width: 7%;
 display: block; /*Divide por filas*/
 margin-right: auto;  
 margin-left: 10px;
+position: sticky;
 }
 #no :hover:not(.activo) {
 background-color: #444;
 }
 
+/*****************************************************************/
+
 /*Peliculas*/
+
 .TablaPelis, .TdPelis{
 border: 2px solid #b81414;
 border-collapse:collapse;
@@ -107,7 +117,6 @@ height: 35px;
   margin-top: 20px;
   background-color: white;
   border-radius: 10px; /* Agregar bordes redondeados a la tabla */
-  overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente */
 }
 
 .TdPelis, .TdPelisPrime{
@@ -123,14 +132,17 @@ height: 35px;
   margin-top: 50px;
 }
 
+/*****************************************************************/
+
 /*Galeria de fotos*/
-.millorsmoments{
+
+.h1Titulo{
   color: white;
   padding-left: 60px;
   padding-top: 20px;
 }
 
-.millorsmomentsSec1, .millorsmomentsSec2, .millorsmomentsSec3{
+.millorsmomentsSec1, .millorsmomentsSec2, .millorsmomentsSec3, .millorsmomentsSec4, .millorsmomentsSec5{
   width: 1400px;
   height: 500px;
   margin: auto;
@@ -146,6 +158,9 @@ height: 35px;
   width: 1400px;
   height: 309px;
   margin: auto;
+}
+.millorsmomentsSec5{
+  padding-top: 185px;
 }
 
 .gf1{
@@ -170,3 +185,89 @@ height: 35px;
   padding-left: 9.56px;
   width: 55%;
 }
+.gf5
+{
+  padding-top: 25px;
+  width: 100%;
+}
+.gf10, .gf11, .gf12, .gf13{
+  width: 49%;
+}
+
+.gf11, .gf13{
+  padding-left: 23px;
+}
+
+.gf12, .gf13{
+  padding-top: 20px;
+}
+
+/************************************************************/
+
+/*Personatges*/
+
+.tablaPersonatges{
+  width: 1518px;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+.tablaPersonatgesTitulo{
+  width: 506px;
+  border: 2px solid #b81414;
+  border-collapse:collapse;
+  color: black;
+  height: 35px;
+  text-align: center;
+}
+
+.tablaPersonatgesImagen{
+  border: 2px solid #b81414;
+  border-collapse:collapse;
+  color: black;
+  height: 35px;
+  background-color: #b81414;
+}
+
+/*****************************************************************/
+
+/*Review*/
+
+#CorreuVisitant{
+    font-size:14pt;
+}
+.tablaReview{
+  ma
+  width: 1518px;
+  border-collapse: collapse;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+  ali
+}
+  
+.tablaReviewTd{
+    align-self: center;
+    border: 2px solid #b81414;
+    border-collapse:collapse;
+    color: black;
+    height: 35px;
+    text-align: left;
+}
+
+.tablaReviewTr{
+  align-self: center;
+}
+  
+
+
+
+
+
+
+/*****************************************************************/
