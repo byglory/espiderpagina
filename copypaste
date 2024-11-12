@@ -8,6 +8,10 @@
 <body>
     <ul class="nav">
        <li class="pasar"> <a href="nosaltres.html">Nosaltres</li>
+        <ul class="dropdown">
+            <li><a href="hugo.html">hugo</a></li>
+            <li><a href="itzan.html">itzan</a></li>
+        </ul>
        <li class="pasar"> <a href="review.html">Review</li>
        <li class="pasar"> <a href="millorsmoments.html">Millors Moments</li>
        <li class="pasar"> <a href="spidervers.html">Spidervers</li>
