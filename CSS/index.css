@@ -249,14 +249,12 @@ height: 35px;
 }
 
 /************************************************************/
-
+ 
 /*Personatges*/
 
 .tablaPersonatges{
-  width: 1518px;
-  border-collapse: collapse;
-  margin-left: auto;
-  margin-right: auto;
+  width: 1400px; y bajas hasta session chat
+    margin-right: auto;
   margin-top: 20px;
   background-color: white;
   border-radius: 10px;
@@ -286,15 +284,15 @@ height: 35px;
     font-size:14pt;
 }
 .tablaReview{
-  ma
-  width: 1518px;
+  
+  width: 500px;
   border-collapse: collapse;
   margin-left:auto;
   margin-right: auto;
   margin-top: 20px;
   background-color: white;
   border-radius: 10px;
-  ali
+  
 }
   
 .tablaReviewTd{
