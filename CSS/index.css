@@ -1,3 +1,8 @@
+/*general*/
+.espai {
+  margin-bottom: 20px; /* Ajusta el valor segons les teves necessitats */
+}
+
 body{
   background-color: #b81414;
   font-family: sans-serif;
@@ -279,9 +284,19 @@ height: 35px;
 /*****************************************************************/
 
 /*Review*/
+#botonEnv{
+  padding: 10px 20px;    /* Mida del botó */
+  font-size: 16px;       /* Mida de la lletra */
+  cursor: pointer;        /* Canvia el cursor quan es passa per sobre */
+}
+.container {
+  justify-content: center; /* Centra horitzontalment */
+  align-items: center;    /* Centra verticalment */
+  height: 100%;           /* Fa que el contenidor ocupi tota l'alçada */
+}
 
 #CorreuVisitant{
-    font-size:14pt;
+    
 }
 .tablaReview{
   
