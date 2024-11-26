@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ca">
 <head>
     <meta charset="UTF-8">
@@ -13,69 +14,65 @@
                   <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                  <a href="hugo.html">Hugo</a>
-                  <a href="itzan.html">Itzan</a>
+                        <a href="hugo.html">Hugo</a>
+                        <a href="itzan.html">Itzan</a>
+                    </div>
             </ul>
         </li>
-        <li class="pasar" id="activo"> <a href="review.html">Review</li>
-        <li class="pasar"> <a href="millorsmoments.html">Millors Moments</li>
-        <li class="pasar"> <a href="spidervers.html">Spidervers</li>
-        <li class="pasar"> <a href="pelicules.html">Pel·lícules</li>
-        <li class="pasar"> <a href="personatges.html">Personatges</li>
-        <li class="pasar"> <a  href="index.html">Home</li>
-        <li id="no"><img class="logoCab" src="IMG/logo.png"></li>
+        <li class="pasar" id="activo"> <a href="review.html">Review </a></li>
+        <li class="pasar"> <a href="millorsmoments.html">Millors Moments</a></li>
+        <li class="pasar"> <a href="spidervers.html">Spidervers</a></li>
+        <li class="pasar"> <a href="pelicules.html">Pel·lícules</a></li>
+        <li class="pasar"> <a href="personatges.html">Personatges</a></li>
+        <li class="pasar"> <a  href="index.html">Home</a></li>
+        <li id="no"><img class="logoCab" src="IMG/logo.png"></a></li>
     </ul> 
-    
-    <table class="tablaReview">
-       <tr class="tablaReviewTr">
-        <tr><td><h1>hola</h1> <p><label for="CorreuVisitant">
-            
-                <h2>Correu electronic: <input type="email" id="CorreuVisitant" placeholder="Introdueix el teu email">
-                </h2>
-            
-        </label></p> </td>
-        </tr>
-            <label for="CorreuVisitant">
-                <td class="tablaReviewTd">
-                    <h2>Correu electronic: <input type="email" id="CorreuVisitant" placeholder="Introdueix el teu email">
-                    </h2>
-                </td>
-            </label>
-       </tr>
+    <form action="confirmacio.html" method="POST">
+        <table class="tablaReview">
+            <tr class="tablaReviewTr">
+                <td>
+                    <h1>hola</h1>
+                    <input type="text" id="entradaCurt" placeholder="Introdueix text curt" required>
+                    
+                    <label for="CorreuVisitant">
+                        <h2>Correu electrònic: </h2> 
+                        <input type="email" id="CorreuVisitant" placeholder="Introdueix el teu email" required>
+                    </label>
+                    
+                    <label for="entradaNumerica">
+                        <h3>Entrada numèrica: </h3>
+                        <input type="number" id="entradaNumerica" placeholder="Introdueix un número" required>
+                    </label>
 
-       <tr>
-            <label for="NomVisitant">
-                <td class="tablaReviewTd">
-                    <h3>Nom: <input type="text" id="NomVisitant" placeholder="Introdueix el teu nom">
-                    </h3>
-                </td>
-            </label>
-        <tr/>
-        <tr>
-            <label for="CognomVisitant">
-                <td class="tablaReviewTd">
-                    <h3>Cognom: <input type="text"  id="CognomVisitant"  placeholder ="Introdueix el teu cognom/s">
-                    </h3>
-                </td>
-            </label>
-        </tr>
+                    <label for="desplegable">
+                        <h3>Selecciona una opció: </h3>
+                        <select id="desplegable" required>
+                            <option value="">Selecciona...</option>
+                            <option value="opcio1">Opció 1</option>
+                            <option value="opcio2">Opció 2</option>
+                        </select>
+                    </label>
 
-        <tr>
-            <label for="NomVisitant">
-                <td class="tablaReviewTd">
-                    <h3>Nom: <input type="text" id="NomVisitant" placeholder="Introdueix el teu nom">
-                    </h3>
+                    <h3>Checkboxs: </h3>
+                    <label><input type="checkbox" name="checkbox1" value="opcio1" checked> Opció 1</label><br>
+                    <label><input type="checkbox" name="checkbox2" value="opcio2"> Opció 2</label><br>
+                    <label><input type="checkbox" name="checkbox3" value="opcio3"> Opció 3</label><br>
+
+                    <h3>Radiobuttons: </h3>
+                    <label><input type="radio" name="radiobutton" value="opcio1" checked> Opció 1</label><br>
+                    <label><input type="radio" name="radiobutton" value="opcio2"> Opció 2</label><br>
+                    <label><input type="radio" name="radiobutton" value="opcio3"> Opció 3</label><br>
+
+                    <label for="textLlarg">
+                        <h3>Text llarg: </h3>
+                        <textarea id="textLlarg" placeholder="Introdueix el teu text aquí" required></textarea>
+                    </label>
+
+                    <br>
+                    <button  type="submit"> <a href="confirmacio.html">Enviar</a></button>
                 </td>
-            </label>
-        <tr/>
-        <tr>
-            <label for="NomVisitant">
-                <td class="tablaReviewTd">
-                    <h3>Cognom: <input type="text"  id="CognomVisitant"  placeholder ="Introdueix el teu cognom/s">
-                    </h3>
-                </td>
-            </label>
-        </tr>     
-       
+            </tr>
+        </table>
+    </form>
 </body>
 </html>

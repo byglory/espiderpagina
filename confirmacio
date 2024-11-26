@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>Confirmació</title>
+</head>
+<body>
+    <div class="confirmacio">
+        <h1>Formulari enviat correctament!</h1>
+        <p>Gràcies per enviar la teva informació. Hem rebut el teu formulari.</p>
+        <button onclick="window.history.back();">Tornar enrere</button>
+    </div>
+</body>
+</html>
