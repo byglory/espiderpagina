@@ -29,7 +29,7 @@
     <form action="confirmacio.html">
         <table class="tablaReview">
             <tr class="tablaReviewTr">
-                <td>
+                <td class="tdreview">
                     <h1>Subscripcio i review</h1>
                     <p class="container">Omple el formulari per tal de subscriure</p>
                     
@@ -53,30 +53,35 @@
                     </label>
 
                     <label for="desplegable">
-                        <h3>Selecciona una opció</h3>
+                        <h3>Com has trobat la nostre web?</h3>
                         <select id="desplegable" required>
                             <option value="">Selecciona...</option>
-                            <option value="opcio1">Opció 1</option>
-                            <option value="opcio2">Opció 2</option>
+                            <option value="opcio1">Un amic</option>
+                            <option value="opcio2">Un familiar</option>
+                            <option value="opcio3">Un anunci</option>
+                            <option value="opcio4">A intrenet</option>
                         </select>
                     </label>
 
-                    <h3>Checkboxs: </h3>
-                    <label><input type="checkbox" name="checkbox1" value="opcio1"> Opció 1</label>
-                    <label><input type="checkbox" name="checkbox2" value="opcio2"> Opció 2</label>
-                    <label><input type="checkbox" name="checkbox3" value="opcio3"> Opció 3</label>
+                    <h2>Selecciona tus géneros de películas favoritos:</h2>
+                    <label><input type="checkbox" name="genero" value="accion"> Accio</label>
+                    <label><input type="checkbox" name="genero" value="comedia"> Comedia</label>
+                    <label><input type="checkbox" name="genero" value="drama"> Drama</label>
+                    <label><input type="checkbox" name="genero" value="terror"> Terror</label>
+                    <label><input type="checkbox" name="genero" value="ciencia_ficcion"> Ciencia-Ficcio</label>
 
-                    <h3>Radiobuttons: </h3>
-                    <label><input type="radio" name="radiobutton" value="opcio1"> Opció 1</label>
-                    <label><input type="radio" name="radiobutton" value="opcio2"> Opció 2</label>
-                    <label><input type="radio" name="radiobutton" value="opcio3"> Opció 3</label>
+                    <h2>Selecciona tu tipo de reseña:</h2>
+                    <label><input type="radio" name="tipo_resena" value="positiva"> Positiva</label>
+                    <label><input type="radio" name="tipo_resena" value="negativa"> Negativa</label>
+                    <label><input type="radio" name="tipo_resena" value="neutral"> Neutral</label>
 
                     <label for="textLlarg">
-                        <h3>Text llarg: </h3>
-                        <textarea id="textLlarg" placeholder="Introdueix el teu text aquí" required class="espai"></textarea>
+                        <h3>Recomenacions: </h3>
+                        <textarea id="textLlarg" placeholder="Introdueix la teuva recomenacion aquí" required class="espai"></textarea>
                     </label>
-
-                    <button class="container" id="botonEnv" type="submit">Enviar</button>
+                    <div class="button-container">
+                        <input type="submit" value="Enviar Ressenya" class="botonEnviar">
+                    </div>
                 </td>
             </tr>
         </table>

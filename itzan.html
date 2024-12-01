@@ -2,8 +2,137 @@
 <html lang="ca">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/index.css">
-    <title>Pelicul·les</title>
+    <title>Review i Orden de Treball</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .form-header p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        label input, label textarea, label select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .task {
+            padding: 10px;
+            background-color: #f8f9fa;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .add-task {
+            background-color: #e9ecef;
+            color: #333;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        .add-task:hover {
+            background-color: #d6d6d6;
+        }
+
+        .submit-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .submit-container button {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+        }
+
+        .nav {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .logoCab {
+            height: 50px;
+        }
+    </style>
 </head>
 <body>
     <ul class="nav">
@@ -13,18 +142,93 @@
                   <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                  <a href="hugo.html">Hugo</a>
-                  <a href="itzan.html" id="activo">Itzan</a>
-                </ul>
+                    <a href="hugo.html">Hugo</a>
+                    <a href="itzan.html">Itzan</a>
+                </div>
+            </ul>
         </li>
-        <li class="pasar"> <a href="review.html">Review</li>
-        <li class="pasar"> <a href="millorsmoments.html">Millors Moments</li>
-        <li class="pasar"> <a href="spidervers.html">Spidervers</li>
-        <li class="pasar"> <a href="pelicules.html">Pel·lícules</li>
-        <li class="pasar"> <a href="personatges.html">Personatges</li>
-        <li class="pasar"> <a  href="index.html">Home</li>
-        <li id="no"><img class="logoCab" src="IMG/logo.png"></li>
-    </ul> 
-    
-</body>
-</html>
+        <li class="pasar" id="activo"><a href="review.html">Review</a></li>
+        <li class="pasar"><a href="millorsmoments.html">Millors Moments</a></li>
+        <li class="pasar"><a href="spidervers.html">Spidervers</a></li>
+        <li class="pasar"><a href="pelicules.html">Pel·lícules</a></li>
+        <li class="pasar"><a href="personatges.html">Personatges</a></li>
+        <li class="pasar"><a href="index.html">Home</a></li>
+        <li id="no"><img class="logoCab" src="IMG/logo.png" alt="Logo"></li>
+      </ul> 
+  
+      <div class="form-container">
+          <header class="form-header">
+              <h1>Subscripció i Review</h1>
+              <p>Omple el formulari per tal de subscriure</p>
+          </header>
+          <form action="confirmacio.html">
+              <section class="general-data">
+                  <h2>Subscripció</h2>
+                  <h3>Nom i cognoms</h3>
+                  <input type="text" id="entradaCurt" placeholder="Introdueix text curt" required>
+  
+                  <label for="CorreuVisitant">
+                      <h3>Correu electrònic</h3>
+                      <input type="email" id="CorreuVisitant" placeholder="Introdueix el teu email" required>
+                  </label>
+  
+                  <label for="entradaNumerica">
+                      <h3>Numero telefònic</h3>
+                      <input type="tel" id="entradaNumerica" placeholder="+34 678912345" pattern="^\+34\s[6-9][0-9]{8}$" required>
+                  </label>
+  
+                  <label for="dataNaixement">
+                      <h3>Data de Naixement</h3>
+                      <input type="date" name="dataNaixement" id="dataNaixement">
+                  </label>
+  
+                  <label for="desplegable">
+                      <h3>Com has trobat la nostra web?</h3>
+                      <select id="desplegable" required>
+                          <option value="">Selecciona...</option>
+                          <option value="opcio1">Un amic</option>
+                          <option value="opcio2">Un familiar</option>
+                          <option value="opcio3">Un anunci</option>
+                          <option value="opcio4">A internet</option>
+                      </select>
+                  </label>
+  
+                  <h2>Selecciona els teus gèneres de pel·lícules favorits:</h2>
+                  <label><input type="checkbox" name="genero" value="accio"> Acció</label>
+                  <label><input type="checkbox" name="genero" value="comedia"> Comèdia</label>
+                  <label><input type="checkbox" name="genero" value="drama"> Drama</label>
+                  <label><input type="checkbox" name="genero" value="terror"> Terror</label>
+                  <label><input type="checkbox" name="genero" value="ciencia_ficcion"> Ciència-Ficció</label>
+  
+                  <h2>Selecciona el teu tipus de ressenya:</h2>
+                  <label><input type="radio" name="tipo_resena" value="positiva"> Positiva</label>
+                  <label><input type="radio" name="tipo_resena" value="negativa"> Negativa</label>
+                  <label><input type="radio" name="tipo_resena" value="neutral"> Neutral</label>
+  
+                  <label for="textLlarg">
+                      <h3>Text llarg:</h3>
+                      <textarea id="textLlarg" placeholder="Introdueix el teu text aquí" required class="espai"></textarea>
+                  </label>
+              </section>
+  
+              <section class="work-done">
+                  <label for="work-details">
+                      <h2>Ordre de Treball</h2>
+                      <textarea id="work-details" placeholder="Se han realitzat treballs d'instal·lació i manteniment."></textarea>
+                  </label>
+              </section>
+  
+              <section class="materials">
+                  <h2>Materials</h2>
+                  <p>Pots afegir una taula o camps per materials.</p>
+                  <!-- Aquí podries afegir més camps per materials si fos necessari -->
+              </section>
+  
+              <div class="button-container">
+                  <input type="submit" value="Enviar Ressenya" class="botonEnviar">
+                  <button type="button" class="add-task">+ Afegir hores de treball</button>
+              </div>
+          </form>
+      </div>
+  </body>
+  </html>

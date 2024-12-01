@@ -3,13 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="CSS/index.css">
-    <title>Confirmació</title>
+    <title>Review</title>
 </head>
 <body>
-    <div class="confirmacio">
-        <h1>Formulari enviat correctament!</h1>
-        <p>Gràcies per enviar la teva informació. Hem rebut el teu formulari.</p>
-        <p><a href="#" onclick="window.history.back(); return false;">Tornar enrere</a></p>
-    </div>
+    <ul class="nav">
+        <li class="pasar">
+            <ul class="dropdown">
+                <button class="dropbtn"> Nosaltes  
+                  <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="hugo.html">Hugo</a>
+                        <a href="itzan.html">Itzan</a>
+                    </div>
+            </ul>
+        </li>
+        <li class="pasar" id="activo"> <a href="review.html">Review </a></li>
+        <li class="pasar"> <a href="millorsmoments.html">Millors Moments</a></li>
+        <li class="pasar"> <a href="spidervers.html">Spidervers</a></li>
+        <li class="pasar"> <a href="pelicules.html">Pel·lícules</a></li>
+        <li class="pasar"> <a href="personatges.html">Personatges</a></li>
+        <li class="pasar"> <a  href="index.html">Home</a></li>
+        <li id="no"><img class="logoCab" src="IMG/logo.png"></a></li>
+    </ul> 
+    <form action="confirmacio.html">
+        <table class="tablaReview">
+            <tr class="tablaReviewTr">
+                <td class="tdreview">
+                    <div class="confirmacio">
+                        <h1>Formulari enviat correctament!</h1>
+                        <p>Gràcies per enviar la teva informació. Hem rebut el teu formulari.</p>
+                        
+                        <div class="button-container">
+                            <input type="button" value="Tornar enrere" class="botonEnviar" onclick="window.location.href='review.html';">
+                        </div>   
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>

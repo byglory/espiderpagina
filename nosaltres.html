@@ -3,27 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="CSS/index.css">
-    <title>Pelicul·les</title>
+    <title>EspiderPàgina</title>
+    <style>
+        /* Estil per centrar el títol */
+        .titulo {
+            text-align: center;
+            margin: 0; /* Elimina el marge superior i inferior */
+            font-size: 24px;
+        }
+        /* Estil per les imatges */
+        .imagenes {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px; /* Espai superior per les imatges */
+        }
+        .imagen-placeholder {
+            
+            background-color: #ccc; /* Color de fons per al placeholder */
+            margin: 0 50px; /* Espai entre les imatges */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px; /* Mida del text del placeholder */
+            color: #666; /* Color del text del placeholder */
+            flex-direction: column; /* Per apilar el text del subtítol a sota */
+        }
+        /* Estil per al text sota les imatges */
+        .text-bajo-imagenes {
+            text-align: center;
+            margin-top: 10px; /* Espai superior per al text sota les imatges */
+            font-size: 18px;
+        }
+        /* Estil per als subtítols */
+        .subtitulo {
+            margin-top: 5px; /* Espai entre la imatge i el subtítol */
+            font-size: 16px; /* Mida del text del subtítol */
+            color: #333; /* Color del text del subtítol */
+        }
+    </style>
 </head>
 <body>
     <ul class="nav">
         <li class="pasar">
             <ul class="dropdown">
-                <button id="activo" class="dropbtn"> Nosaltes  
-                  <i class="fa fa-caret-down"></i>
-                </button>
+                <li>
+                    <button class="dropbtn"> 
+                        <a href="nosaltres.html">Nosaltes</a>
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                </li>
                 <div class="dropdown-content">
-                  <a href="hugo.html">Hugo</a>
-                  <a href="itzan.html">Itzan</a>
-                </ul>
+                    <a href="hugo.html">Hugo</a>
+                    <a href="itzan.html">Itzan</a>
+                </div>
+            </ul>
         </li>
-        <li class="pasar"> <a href="review.html">Review</li>
-        <li class="pasar"> <a href="millorsmoments.html">Millors Moments</li>
-        <li class="pasar"> <a href="spidervers.html">Spidervers</li>
-        <li class="pasar"> <a href="pelicules.html">Pel·lícules</li>
-        <li class="pasar"> <a href="personatges.html">Personatges</li>
-        <li class="pasar"> <a  href="index.html">Home</li>
-        <li id="no"><img class="logoCab" src="IMG/logo.png"></li>
-    </ul> 
+        <li class="pasar"> <a href="review.html">Review</a></li>
+        <li class="pasar"> <a href="millorsmoments.html">Millors Moments</a></li>
+        <li class="pasar"> <a href="spidervers.html">Spidervers</a></li>
+        <li class="pasar"> <a href="pelicules.html">Pel·lícules</a></li>
+        <li class="pasar"> <a href="personatges.html">Personatges</a></li>
+        <li class="pasar" id="activo"> <a href="index.html">Home</a></li>
+        <li id="no"><img class="logoCab" src="IMG/logo.png" alt="Logo"></li>
+    </ul>
+
+    <!-- Títol centrat -->
+    <h1 class=>Benvingut a EspiderPàgina</h1>
+
+    <!-- Contenidor per les imatges -->
+    <div class="imagenes">
+        <div class="imagen-placeholder"><a href="itzan.html"><img src="IMG/nosaltres/spider.png" alt=""></a>
+            
+            <div class="subtitulo">Itzan Jimenez</div>
+        </div>
+        <div class="imagen-placeholder"> <a href="hugo.html"><img src="IMG/nosaltres/venom.png" alt=""></a>
+            
+            <div class="subtitulo">Hugo Murillo</div>
+        </div>
+    </div>
+
+    <!-- Text sota les imatges -->
+    <p class="text-bajo-imagenes">Som estudiants apassionats pel món d’Spiderman!
+      Som l’Hugo Murillo i l’Itzan Jiménez, dos estudiants que hem creat una pàgina web dedicada a un dels superherois més icònics de tots els temps: Spiderman. Aquest projecte és el resultat de la nostra passió pel personatge, la seva història, i tot el que l’envolta, així com del nostre interès pel desenvolupament web.</p>
+
+    <hr class="SepPelis">
 </body>
 </html>

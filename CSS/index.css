@@ -83,14 +83,14 @@ padding-bottom: 1.5px;
       color: white;
       border: none;
       background-color: inherit;
-      padding-top: 8px;
+      padding:
   }
   
   .dropdown {
+    
     font-size: 16px;  
     outline: none;
     color: white;
-    padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
@@ -284,20 +284,28 @@ height: 35px;
 /*****************************************************************/
 
 /*Review*/
-#botonEnv{
-  padding: 10px 20px;    /* Mida del botó */
-  font-size: 16px;       /* Mida de la lletra */
-  cursor: pointer;        /* Canvia el cursor quan es passa per sobre */
-}
-.container {
-  justify-content: center; /* Centra horitzontalment */
-  align-items: center;    /* Centra verticalment */
-  height: 100%;           /* Fa que el contenidor ocupi tota l'alçada */
+css
+Insert Code
+Edit
+Copy code
+.button-container {
+    text-align: center; /* Centra el contingut dins del div */
+    margin-top: 30px; /* Espai superior opcional */
 }
 
-#CorreuVisitant{
-    
+.botonEnviar {
+    padding: 10px 20px;    /* Mida del botó */
+    font-size: 16px;       /* Mida de la lletra */
+    cursor: pointer;        /* Canvia el cursor quan es passa per sobre */
+  }
+
+.tdreview {
+  padding-left: 100px;
+  padding-right: 100px;
+  
 }
+
+
 .tablaReview{
   
   width: 500px;
@@ -324,8 +332,103 @@ height: 35px;
 }
   
 
+  
+/* General */
 
 
+h1, h2, h3 {
+  color: #444; /* Títulos oscuros para contraste */
+}
+
+p {
+  color: #555;
+  margin: 0;
+}
+
+.espai {
+  margin-bottom: 20px; /* Espaciado entre elementos */
+}
+
+/* Tabla principal (Formulario) */
+.tablaReview {
+  width: 100%;
+  max-width: 700px; /* Anchura máxima para formularios */
+  margin: 80px auto 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.tablaReviewTd {
+  padding: 20px;
+  vertical-align: top;
+}
+
+h1 {
+  text-align: center;
+  color: #b81414;
+  margin-bottom: 20px;
+}
+
+.container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input, select, textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  width: auto;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.botonEnviar {
+  background-color: #b81414;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botonEnviar:hover {
+  background-color: #920000;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+  .tablaReview {
+    width: 90%;
+    padding: 10px;
+  }
+
+  input, select, textarea {
+    width: calc(100% - 10px);
+  }
+}
+
+.TitNosaltres{
+  
+}
 
 
 
