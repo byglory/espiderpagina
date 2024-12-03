@@ -1,0 +1,55 @@
+.tablaPersonatges{
+    width: 1400px; y bajas hasta session chat
+      margin-right: auto;
+      margin-left: auto:
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .tablaPersonatgesTitulo{
+    width: 506px;
+    border: 2px solid #b81414;
+    border-collapse:collapse;
+    color: black;
+    height: 35px;
+    text-align: center;
+  }
+  
+  .tablaPersonatgesImagen{
+    border: 2px solid #b81414;
+    border-collapse:collapse;
+    color: black;
+    height: 35px;
+    background-color: #b81414;
+  }
+
+  .personatges-lists {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Bord de color gris */
+    border-radius: 5px; /* Cantons arrodonits */
+    background-color: #f9f9f9; /* Color de fons lleugerament gris */
+}
+
+.personatges-lists h2 {
+    color: #2c3e50; /* Color del text del títol */
+    font-family: 'Arial', sans-serif; /* Tipus de lletra */
+    font-size: 24px; /* Mida de la lletra */
+    margin-bottom: 10px; /* Espai per sota del títol */
+}
+
+.personatges-lists ul {
+    list-style-type: none; /* Elimina els punts de la llista */
+    padding: 0; /* Elimina el padding per defecte */
+}
+
+.personatges-lists li {
+    padding: 5px; /* Espai al voltant de cada element de la llista */
+    border-bottom: 1px solid #ddd; /* Bord inferior per cada element */
+    transition: background-color 0.3s; /* Transició per al color de fons */
+}
+
+.personatges-lists li:hover {
+    background-color: #ecf0f1; /* Color de fons al passar el ratolí */
+}
+  

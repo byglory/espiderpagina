@@ -1,0 +1,41 @@
+
+/*Peliculas*/
+
+.TablaPelis, .TdPelis{
+    border: 2px solid #b81414;
+    border-collapse:collapse;
+    color: black;
+    height: 35px;
+    }
+    
+    .TdPelisPrime {
+      color: black;
+      height: 50px;
+      border: 2px solid #b81414 ;
+    
+    }
+    
+    .TablaPelis{
+      width: 1400px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: px;
+      background-color: white;
+      border-radius: 10px; /* Agregar bordes redondeados a la tabla */
+    }
+    
+    .TdPelis, .TdPelisPrime{
+      padding-left: 10px;
+    }
+    
+    .TitTablaPelis{
+      text-align: center;
+      margin-top: 90px;
+      
+      color: white;
+    }
+    
+    .SepPelis{
+      margin-top: 50px;
+    }
+    

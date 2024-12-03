@@ -1,0 +1,20 @@
+.intro {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #f4f4f4; /* Color de fons suau */
+    padding: 20px; /* Espai interior */
+    text-align: center; /* Centrar el text */
+    margin-bottom: 20px; /* Espai inferior */
+    border-radius: 8px; /* Cantons arrodonits */
+}
+
+.intro h1 {
+    font-size: 2.5em; /* Mida del títol */
+    color: #333; /* Color del text */
+}
+
+.intro p {
+    font-size: 1.2em; /* Mida del text del paràgraf */
+    color: #666; /* Color del text del paràgraf */
+    line-height: 1.5; /* Altura de línia per a millor llegibilitat */
+}
