@@ -1,0 +1,14 @@
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.gf {
+    width: 400px; /* Ample de la imatge (més gran) */
+    height: 300px; /* Alçada de la imatge (més gran) */
+    margin: 5px; /* Espai entre les imatges */
+    border: 2px solid #ccc; /* Vora de les imatges */
+    object-fit: cover; /* Ajusta la imatge dins de la vora */
+}

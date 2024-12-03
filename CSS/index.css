@@ -175,7 +175,9 @@ height: 35px;
 }
 
 .TitTablaPelis{
-  text-align: left;
+  text-align: center;
+  margin-top: 90px;
+  
   color: white;
 }
 
@@ -188,6 +190,7 @@ height: 35px;
 /*Galeria de fotos*/
 
 .h1Titulo{
+  margin-top: 90px;
   color: white;
   padding-left: 60px;
   padding-top: 20px;
@@ -427,9 +430,46 @@ textarea {
 }
 
 .TitNosaltres{
-  
+
 }
 
-
+/*Nosaltres*/
+/* Estil per centrar el títol */
+.titulo {
+  text-align: center;
+  margin: 0; /* Elimina el marge superior i inferior */
+  font-size: 24px;
+}
+/* Estil per les imatges */
+.imagenes {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Espai superior per les imatges */
+}
+.imagen-placeholder {
+  
+  background-color: #ccc; /* Color de fons per al placeholder */
+  margin: 0 50px; /* Espai entre les imatges */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px; /* Mida del text del placeholder */
+  color: #fafafa; /* Color del text del placeholder */
+  flex-direction: column; /* Per apilar el text del subtítol a sota */
+}
+/* Estil per al text sota les imatges */
+.text-bajo-imagenes {
+  text-align: center;
+  margin-top: 10px; /* Espai superior per al text sota les imatges */
+  font-size: 18px;
+  color:white;
+  margin-bottom: 50px;
+}
+/* Estil per als subtítols */
+.subtitulo {
+  margin-top: 5px; /* Espai entre la imatge i el subtítol */
+  font-size: 16px; /* Mida del text del subtítol */
+  color: #333; /* Color del text del subtítol */
+}
 
 /*****************************************************************/

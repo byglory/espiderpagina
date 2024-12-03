@@ -1,0 +1,65 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assegura que el body ocupi com a mínim tota l'alçada de la finestra */
+}
+
+main {
+    flex: 1; /* Permet que el contingut principal ocupi l'espai disponible */
+    padding: 20px; /* Afegeix padding per a un millor espai */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative; /* Mantingues 'relative' si no vols que estigui fixat */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0; /* Elimina tots els marges */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Altres estils com els de les xarxes socials i els textos */
+.footer-content .social-media {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-content .social-media li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-content .social-media a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content .social-media a:hover {
+    text-decoration: underline;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.footer-content p a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+.footer-content p a:hover {
+    text-decoration: underline;
+}

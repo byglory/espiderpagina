@@ -1,0 +1,41 @@
+/* Estil per a la taula */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+/* Estil per a les capçaleres de la taula */
+thead th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Estil per a les cel·les de la taula */
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estil per a les files parells de la taula */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estil per a les files senars de la taula */
+tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* Estil per a les cel·les que contenen enllaços */
+td a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+td a:hover {
+    color: #23527c;
+}
