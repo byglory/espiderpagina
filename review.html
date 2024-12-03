@@ -10,7 +10,7 @@
     <ul class="nav">
         <li class="pasar">
             <ul class="dropdown">
-                <button class="dropbtn"> Nosaltes  
+                <button class="dropbtn"><a href="nosaltres.html"> Nosaltres</a>  
                   <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
@@ -35,26 +35,26 @@
                     <p class="container">Omple el formulari per tal de subscriure</p>
                     
                     <h2>Subscripcio</h2>
-                    <h3>Nom i cognoms</h3>
+                    <h3>Nom i cognoms*</h3>
                     <input type="text" id="entradaCurt" placeholder="Introdueix text curt" required>
                     
                     <label for="CorreuVisitant">
-                        <h3>Correu electrònic</h3> 
+                        <h3>Correu electrònic*</h3> 
                         <input type="email" id="CorreuVisitant" placeholder="Introdueix el teu email" required>
                     </label>
                     
                     <label for="entradaNumerica">
-                        <h3>Numero telefonic</h3>
+                        <h3>Numero telefonic*</h3>
                         <input type="tel" id="entradaNumerica" placeholder="+34 678912345" pattern="^\+34\s[6-9][0-9]{8}$" required>
                     </label>
 
                     <label for="dataNaixement">
-                        <h3>Data de Naixement</h3>
+                        <h3>Data de Naixement*</h3>
                         <input type="date" name="dataNaixement" id="dataNaixement">
                     </label>
 
                     <label for="desplegable">
-                        <h3>Com has trobat la nostre web?</h3>
+                        <h3>Com has trobat la nostre web?*</h3>
                         <select id="desplegable" required>
                             <option value="">Selecciona...</option>
                             <option value="opcio1">Un amic</option>
@@ -64,21 +64,21 @@
                         </select>
                     </label>
 
-                    <h2>Selecciona tus géneros de películas favoritos:</h2>
+                    <h2>Selecciona els teus genres de películes favorites:*</h2>
                     <label><input type="checkbox" name="genero" value="accion"> Accio</label>
                     <label><input type="checkbox" name="genero" value="comedia"> Comedia</label>
                     <label><input type="checkbox" name="genero" value="drama"> Drama</label>
                     <label><input type="checkbox" name="genero" value="terror"> Terror</label>
                     <label><input type="checkbox" name="genero" value="ciencia_ficcion"> Ciencia-Ficcio</label>
 
-                    <h2>Selecciona tu tipo de reseña:</h2>
+                    <h2>Selecciona tu tipo de reseña:*</h2>
                     <label><input type="radio" name="tipo_resena" value="positiva"> Positiva</label>
                     <label><input type="radio" name="tipo_resena" value="negativa"> Negativa</label>
                     <label><input type="radio" name="tipo_resena" value="neutral"> Neutral</label>
 
                     <label for="textLlarg">
                         <h3>Recomenacions: </h3>
-                        <textarea id="textLlarg" placeholder="Introdueix la teuva recomenacion aquí" required class="espai"></textarea>
+                        <textarea id="textLlarg" placeholder="Introdueix la teuva recomenacion aquí" class="espai"></textarea>
                     </label>
                     <div class="button-container">
                         <input type="submit" value="Enviar Ressenya" class="botonEnviar">
